@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="todo">
+    <div class="welcome">
+      <img class="pokéBall" src="img login/icon pokebola.png" alt="pokéBall">
+      <p class="titulo">Welcome to Pokémon League </p>
+    </div>
+    <div>
+      <form>
+        <p>Email</p><input type="email" placeholder="Enter with your email" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <p>Password</p><input type="password" placeholder="Enter your password" required>
+        <a class="button" href="main.html">Log in</a>
+        <a href="singup.html">Forgot your password?</a>
+      </form>
+    </div>
+    <div class="icons">
+      <p>Or</p>
+      <a href="https://accounts.google.com/signin">
+        <img src="https://developers.google.com/identity/images/g-logo.png" alt="Iniciar sesión con Google"
+          class="google-icon">
+      </a>
+      <a href="https://www.instagram.com/accounts/login/?next=/">
+        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+          alt="Iniciar sesión con Instagram" class="instagram-icon">
+      </a>
+      <a href="https://twitter.com/login">
+        <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Iniciar sesión con Twitter" class="twitter-icon">
+      </a>
+
+    </div>
+    <div class="crearCuenta">
+      <a href="singup.html">Not on Pokémon League yet? Sign up</a>
+    </div>
+
+
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>

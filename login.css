@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url('img login/wallpaper log in.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pokéBall {
+    width: 67px;
+    height: 67px;
+}
+
+.titulo {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo {
+    background: #83AA7B;
+    opacity: 0.7;
+    border-radius: 30px;
+    position: absolute;
+    width: 595px;
+    height: 713px;
+    left: 30%;
+    right: 30%;
+    top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #000000;
+}
+
+form input {
+    padding: 5px;
+    width: 440px;
+    height: 25px;
+    left: 419px;
+    top: 288px;
+
+    background: #3A7757;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    background-color: #E30613;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    display: inline-block;
+}
+
+.icons a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+.crearCuenta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
