@@ -20,11 +20,11 @@
     </div>
     <div>
       <form>
-        <p>Email</p><input type="email" placeholder="Enter with your email" required
+        <p>Email</p><input type="email" id="email" placeholder="Enter with your email" required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <p>Password</p><input type="password" placeholder="Enter your password" required>
-        <a class="button" href="main.html">Log in</a>
-        <a href="singup.html">Forgot your password?</a>
+        <p>Password</p><input type="password" id="password" placeholder="Enter your password" required>
+        <a class="button" onclick="login()" id="Log in-btn">Log in</a>
+        <a>Forgot your password?</a>
       </form>
     </div>
     <div class="icons">
