@@ -56,7 +56,7 @@ li a{
 
 
 .us{
-    width: 50vw;
+    width: 40vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -67,18 +67,40 @@ li a{
 }
 .fotos{
     display: flex;
+    flex-direction: row;
 }
 
 .fotos--foto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .fotos--foto img{
-    width: 150px;
+    width: 80px;
     border-radius: 100%;
+    margin: 0;
+}
+
+.fotos--foto p{
+    margin: 0;
+}
+
+.us-contact{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: small;
+    color: whitesmoke;
+    background-color: #1E1E1E;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.us-contact p{
+    margin: 2px;
 }
