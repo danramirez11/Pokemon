@@ -2,8 +2,7 @@ objList = []
 const container = document.getElementById('pokemonContainer');
 
 async function getPokemon() {
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon');
-    const data = await response.json();
+    
     const pokemonList = data.results;
 
     //acá agarro el json del api y los vuelvo como un objeto de personaje
@@ -29,4 +28,13 @@ async function getPokemon() {
   function selected(pos) {
     const character = objList[pos];
     window.location.href = `./detail.html?id=${character.name}`
+}
+
+function favorites(){
+  container.innerHTML = " "
+
+  for(let i = 0; i < 4; i++) {
+    const characterFav = objList[i]
+    container.innerHTML += characterFav.toHtml(i)
+}
 }
