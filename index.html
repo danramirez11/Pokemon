@@ -6,72 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-
     <nav class="navig">
-
+        <div class="navig--logo">
         <img class="ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" alt="">
-
-                <p class="pokemon">POKÉMON</p>
+        <p class="pokemon">POKÉMON</p>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </div>
 
         <ul class="list">
 
             <li>
-                <a class="home" href="#">HOME</a>
+                <a href="index.html">HOME</a>
             </li>
 
             <li>
-                <a class="profi" href="infouser.html">PROFILE</a>
+                <a href="us.html">ABOUT US</a>
             </li>
 
             <li>
-                <button class="logout">
-                    LOG OUT
-                </button>
+                <a class="button" href="login.html">
+                    LOG IN
+                </a>
             </li>
 
         </ul>
     </nav>
 
-    <div class="menu">
+    <div class="header">
+        <img class="header--pikachu" src="https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png" alt="Pikachu">
+        <div class="header--texto">
+            <h1>WELCOME TO THE POKÉMON LEAGUE</h1>
+            <p>Here you can find news, game data and interact with other Pokémon Trainers</p>
+            <a href="singup.html" class="header--texto-boton button">START MY JOURNEY</a>
+        </div>
+    </div>
 
-        <div class="welcome">
-            <img class="user" src="https://assets.stickpng.com/thumbs/585e4beacb11b227491c3399.png" alt="">
-            <div class="title">
-            <h1>Hi Username!</h1>
-            <p class="look">What Pokemon are you looking for today?</p>
+    <div class="carrusel">
+        <div class="carrusel--carrusel">
+            <img src="imagenes/Pantalla01.png" alt="">
+            <img src="imagenes/Pantalla03.png" alt="">
+            <img src="imagenes/Pantalla02.png" alt="">
+        </div>
+        <div class="carrusel--texto">
+            <h2>FIND ALL THE DATA ABOUT YOUR FAVORITE POKÉMON</h2>
+        </div>
+    </div>
+
+    <div class="divisor--pokemon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="footer--texto">
+            <p>Terms of use</p>
+            <p>Cookie Page</p>
+            <p>Legal Info</p>
+        </div>
+        <div class="footer--contactUs">
+            <p>Contact Us</p>
+            <p>support@pokemon.com</p>
+            <div class="footer--contactUs-logos">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5q0FP74VV9wbfwP378_7kj7iDomHuKrxkXsxDdUT28V9dlVMNUe-EMzaLwaFhneeuZI&usqp=CAU" alt="">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="">
             </div>
         </div>
+        <div class="footer--texto2">
+            <p>©2023 Pokémon. ©1995 - 2023</p>
+            <p>Nintendo/Creatures Inc./GAME FREAK inc. TM,</p>
+            <p>®Nintendo.</p>
+        </div>
 
-        <nav class="pokedex">
-
-            <div class="thebar">
-            <input class="sear" type="search" placeholder="Search Pokemon" id="InputSearch">
-            </div>
-
-            <hr class="line">
-
-            <ul class="list2">
-
-                <li>
-                    <a class="favs" href="Favorite.html">Your favorites</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-
-    <div id="resultadosLista"></div>
-
-
-    <div id="pokemonContainer"></div>
-
-    <script src="index.js"></script>
-    <script src="detail.js"></script>
-    <script src="pokemon.js"></script>
-    <script src="Search.js"></script>
+    </div>
+    
 </body>
 </html>
