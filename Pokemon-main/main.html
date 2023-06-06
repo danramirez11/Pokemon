@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navig">
+
+        <img class="ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" alt="">
+
+                <p class="pokemon">POKÉMON</p>
+
+        <ul class="list">
+
+            <li>
+                <a class="home" href="index.html">HOME</a>
+            </li>
+
+            <li>
+                <a class="profi" href="infouser.html">PROFILE</a>
+            </li>
+
+            <li>
+                <button class="logout">
+                    LOG OUT
+                </button>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="menu">
+
+        <div class="welcome">
+            <img class="user" src="https://assets.stickpng.com/thumbs/585e4beacb11b227491c3399.png" alt="">
+            <div class="title">
+            <h1>Hi Username!</h1>
+            <p class="look">What Pokemon are you looking for today?</p>
+            </div>
+        </div>
+
+        <nav class="pokedex">
+
+            <div class="thebar">
+            <input class="sear" type="search" placeholder="Search Pokemon" id="InputSearch">
+            </div>
+
+            <hr class="line">
+
+            <ul class="list2">
+
+                <li>
+                    <a class="favs" onclick="favorites()">Your favorites</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+    <div id="resultadosLista"></div>
+
+
+    <div id="pokemonContainer"></div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="detail.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="Search.js"></script>
+</body>
+</html>
