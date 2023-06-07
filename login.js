@@ -29,14 +29,16 @@ function login() {
         return;
     }
 
-    const userDataJSON = JSON.parse(userData)
-
-    if (email === userDataJSON.email && password === userDataJSON.password) {
-        const userString = JSON.stringify(userDataJSON)
-        localStorage.setItem("loggedUser", userString)
-        window.location.href = "./main.html"
+    const userDataArray = JSON.parse(userData);
+    const user = userDataArray.find(
+      (user) => user.email === email && user.password === password
+    );
+  
+    if (user) {
+      const userString = JSON.stringify(user);
+      localStorage.setItem("loggedUser", userString);
+      window.location.href = "./main.html";
     } else {
-        alert("Incorrect username or password")
+      alert("Incorrect email or password");
     }
-
-}
+  }

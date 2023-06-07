@@ -1,13 +1,14 @@
-const loggedUser = localStorage.getItem("loggedUser")
-if(loggedUser !== null) {
-    window.location.href = "./main.html"
-}
-
-function createUser() {
-    const email = document.getElementById("email-input").value
-    const password = document.getElementById("password-input").value
-    const username = document.getElementById("username").value
-
+function signUp() {
+    const loggedUser = localStorage.getItem("loggedUser"); // Verifica si hay un usuario logueado
+    if (loggedUser !== null) {
+      window.location.href = "./main.html"; // Redirige a la página principal si hay un usuario logueado
+    }
+  
+    const email = document.getElementById("email-input").value; // Obtiene el valor del campo de correo electrónico
+    const password = document.getElementById("password-input").value; // Obtiene el valor del campo de contraseña
+    const username = document.getElementById("username").value; // Obtiene el valor del campo de nombre de usuario
+  
+    
     const errors = {
         username: "Username is required",
         email: "Email is required",
@@ -30,14 +31,22 @@ function createUser() {
         alert(`Error: ${errors.username}\n${errors.email}\n${errors.password}`);
         return;
     }
-
-    const user = {
-        username: username,
-        email: email,
-        password: password
+    
+    const userData = localStorage.getItem("userData");
+    let userDataArray = [];
+    if (userData) {
+      userDataArray = JSON.parse(userData);
     }
-    const userString = JSON.stringify(user)
-    localStorage.setItem("userData", userString)
-
-    window.location.href = "./login.html"
-}
+  
+    const user = {
+      username: username,
+      email: email,
+      password: password,
+    };
+  
+    userDataArray.push(user);
+    const updatedUserData = JSON.stringify(userDataArray);
+    localStorage.setItem("userData", updatedUserData);
+  
+    window.location.href = "./login.html";
+  }
