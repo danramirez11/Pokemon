@@ -9,7 +9,7 @@ class Pokemon {
 
     toHtml(name) {
         return `
-        <div class="card" onclick="selected('${this.name}')>
+        <div class="card" onclick="selected('${this.name}')">
             <p>${this.name}</p>
             <img width="100" src="${this.image}" />
         </div>
@@ -27,7 +27,7 @@ class Pokemon {
             <p class="wei">Weight: ${this.weight} hg</p>
             <p class="hei">Height: ${this.height} dm</p>
             <button class="fav" onclick="addToFavorites('${this.name}')">
-                <p id="favText"> </p>
+                <p id="favText">Añadir a favoritos</p>
                 <i class="fa-regular fa-bookmark"></i>
             </button>
             </div>
